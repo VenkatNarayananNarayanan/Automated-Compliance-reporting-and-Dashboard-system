@@ -94,3 +94,16 @@ The dataset structure mirrors what you’d expect in a real financial institutio
 | 7   | `After Audit report generated.png`            | Audit log file CSV updated         |
 | 8   | `Audit Panel.png`                             | Tableau: Audit Trail panel         |
 | 9   | `Automated email to manager.png`              | Screenshot of email with reports   |
+
+| Preview                                                                | Description                                                                           |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| ![](screenshots/Alteryx%20Workflow.png)                                | 🛠 **Alteryx ETL Workflow**: Validates rules and creates risk score                   |
+| ![](screenshots/Compliance%20dashboard.png)                            | 📊 **Tableau Compliance Dashboard**: Visual summary of violations and compliance rate |
+| ![](screenshots/risk%20explor%20table.png)                             | 🧮 **Risk Explorer Table**: Detailed view of violations and scores                    |
+| ![](screenshots/Time%20trend.png)                                      | 📈 **Time Trend Analysis**: KYC updates, violations, and late payments over time      |
+| ![](screenshots/Before%20Automate%20Weekly%20compliance%20task.png)    | ⏳ **Before Automation**: Manual setup proof before scheduling                         |
+| ![](screenshots/After%20Automated%20weekly%20compliance%20task%20.png) | ⚙️ **After Automation**: Task scheduler executed workflow successfully                |
+| ![](screenshots/Before%20weekly%20Audit%20report%20generation.png)     | 📁 **Before Audit Log**: Report folder before generating audit trail                  |
+| ![](screenshots/After%20Audit%20report%20generated.png)                | 🧾 **After Audit Log**: Audit log CSV created by automation script                    |
+| ![](screenshots/Audit%20Panel.png)                                     | 📋 **Audit Panel in Tableau**: View latest generated reports from audit log           |
+| ![](screenshots/Automated%20email%20to%20manager.png)                  | 📬 **Email to Manager**: Simulated automatic email with PDF attachments               |
