@@ -1,0 +1,405 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>mock_compliance_data_realistic.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Customer_ID" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Credit_Limit" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Current_Balance" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="KYC_Last_Updated" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Last_Payment_Date" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Account_Status" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Txn_Count_Last_30_Days" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Total_Txn_Amount_Last_30_Days" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Late_Fees_Accrued" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: C:\Users\VENKAT\Desktop\Compliance_project\mock_compliance_data_realistic.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="498" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Last_Payment_Date</InputFieldName>
+          <Language>English</Language>
+          <Format>dd-MM-yyyy</Format>
+          <OutputFieldName>Payment_Parsed</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Last_Payment_Date From:
+dd-MM-yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff(DateTimeNow(), [KYC_parsed], &quot;days&quot;) &gt; 365&#xA;" field="KYC_Violation" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="DateTimeDiff(DateTimeNow(), [Payment_Parsed], &quot;days&quot;) &gt; 60" field="Payment_Overdue" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="[Current_Balance] &gt; [Credit_Limit]" field="Overlimit_Violation" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="[Account_Status] = &quot;Delinqunet&quot; or [Account_Status] = &quot;Watchlist&quot;" field="High_risk_status" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="ToNumber([Late_Fees_Accrued]) &gt; 2000" field="Late_fee_alert" size="1" type="Bool" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>KYC_Violation = DateTimeDiff(DateTimeNow(), [KYC_parsed], "days") &gt; 365
+
+Payment...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>KYC_Last_Updated</InputFieldName>
+          <Language>English</Language>
+          <Format>dd-MM-yyyy</Format>
+          <OutputFieldName>KYC_parsed</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert KYC_Last_Updated From:
+dd-MM-yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="858" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\VENKAT\AppData\Local\Temp\Alteryx\Engine_19920_bd48939b9762498c9a87e050380c2b90_\Engine_19920_17f6bd521e3847dab8dddd06eb98bdfd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="858" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber([KYC_Violation]) + ToNumber([Payment_Overdue]) + ToNumber([Overlimit_Violation]) + ToNumber([High_risk_status]) + ToNumber([Late_fee_alert])" field="Total_violation" size="4" type="Int32" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total_violation = ToNumber([KYC_Violation]) + ToNumber([Payment_Overdue]) + ToNu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\VENKAT\AppData\Local\Temp\Alteryx\Engine_19920_bd48939b9762498c9a87e050380c2b90_\Engine_19920_bd141e1aa0d44b61bfa17cda0cb0cf37~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1062" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(([KYC_Violation])) * 2 +&#xA;ToNumber(([Payment_Overdue])) * 3 +&#xA;ToNumber(([Overlimit_Violation])) * 2 +&#xA;ToNumber(([High_Risk_Status])) * 4 +&#xA;ToNumber(([Late_Fee_Alert])) * 1" field="Compliance_Risk_Score" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Compliance_Risk_Score = ToNumber(([KYC_Violation])) * 2 +
+ToNumber(([Payment_Ove...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1206" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\VENKAT\AppData\Local\Temp\Alteryx\Engine_19920_bd48939b9762498c9a87e050380c2b90_\Engine_19920_3bc830914f794fd1856959ad17f41869~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1122" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Trim(&#xA;  Regex_Replace(&#xA;    IF [KYC_Violation] THEN &quot;KYC Violation, &quot; ELSE &quot;&quot; ENDIF +&#xA;    IF [Payment_Overdue] THEN &quot;Payment Overdue, &quot; ELSE &quot;&quot; ENDIF +&#xA;    IF [Overlimit_Violation] THEN &quot;Overlimit Violation, &quot; ELSE &quot;&quot; ENDIF +&#xA;    IF [High_Risk_Status] THEN &quot;High-Risk Status, &quot; ELSE &quot;&quot; ENDIF +&#xA;    IF [Late_Fee_Alert] THEN &quot;Late Fee Alert, &quot; ELSE &quot;&quot; ENDIF ,&#xA;    &quot;, $&quot;,  // Regex: removes final comma followed by space&#xA;    &quot;&quot;      // Replace with nothing&#xA;  )&#xA;)&#xA;" field="Violation_Explanation" size="200" type="String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Violation_Explanation = Trim(
+  Regex_Replace(
+    IF [KYC_Violation] THEN "KYC ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1230" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\VENKAT\AppData\Local\Temp\Alteryx\Engine_19920_bd48939b9762498c9a87e050380c2b90_\Engine_19920_bb56be80769646dcbb8e6973ce0e275b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1182" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\VENKAT\Desktop\Compliance_project\mock_data_compliance_tableau.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>mock_data_compliance_tableau.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ETL_compliance_rule</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e2d5d5c1-8c2d-4f52-bbc8-bd4a4e5246bb" />
+      <Telemetry>
+        <PreviousWorkflowId value="7296e3e3-8c2b-4e24-bffc-03fcd99c3fe3" />
+        <OriginWorkflowId value="7296e3e3-8c2b-4e24-bffc-03fcd99c3fe3" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

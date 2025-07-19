@@ -1,0 +1,201 @@
+Customer_ID,Credit_Limit,Current_Balance,KYC_Last_Updated,Last_Payment_Date,Account_Status,Txn_Count_Last_30_Days,Total_Txn_Amount_Last_30_Days,Late_Fees_Accrued,Region,KYC_parsed,Payment_Parsed,KYC_Violation,Payment_Overdue,Overlimit_Violation,High_risk_status,Late_fee_alert,Total_violation,Compliance_Risk_Score,Violation_Explanation
+CUST0001,189752,171230,02-08-2023,22-05-2022,Closed,15,5141.33,1332,North,2023-08-02,2022-05-22,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0002,134896,159185,16-08-2020,26-12-2024,Active,7,30266.63,201,North,2020-08-16,2024-12-26,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0003,121295,110226,21-02-2020,15-09-2022,Active,37,49326.59,3507,North,2020-02-21,2022-09-15,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0004,150689,100793,27-02-2024,20-09-2022,Active,11,27292.94,4212,North,2024-02-27,2022-09-20,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0005,61111,71934,17-07-2021,31-08-2024,Delinquent,23,46278.05,574,East,2021-07-17,2024-08-31,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0006,87504,60160,16-05-2021,30-01-2025,Active,27,12569.71,536,West,2021-05-16,2025-01-30,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0007,182874,225849,02-04-2021,05-12-2022,Closed,7,38237.82,1625,South,2021-04-02,2022-12-05,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0008,58155,9540,12-10-2020,27-06-2023,Active,27,27032.02,2122,North,2020-10-12,2023-06-27,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0009,89384,16364,17-02-2024,16-12-2024,Active,35,36305.29,385,East,2024-02-17,2024-12-16,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0010,162561,168172,28-07-2020,16-05-2024,Active,25,4054.73,3281,East,2020-07-28,2024-05-16,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0011,97254,125917,17-10-2023,10-03-2023,Active,7,8239.22,474,East,2023-10-17,2023-03-10,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0012,71918,51991,25-02-2024,09-01-2025,Watchlist,49,7522.73,417,South,2024-02-25,2025-01-09,True,True,False,True,False,3,9,"KYC Violation, Payment Overdue, High-Risk Status"
+CUST0013,135981,104182,21-01-2023,16-02-2023,Active,27,34671.11,3600,North,2023-01-21,2023-02-16,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0014,80306,30977,27-06-2020,01-10-2023,Active,27,42377.59,954,West,2020-06-27,2023-10-01,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0015,197718,94704,24-04-2023,28-03-2024,Closed,36,37731.2,4971,West,2023-04-24,2024-03-28,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0016,96843,49115,14-05-2022,04-02-2024,Active,40,2493.14,4858,East,2022-05-14,2024-02-04,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0017,170975,91007,06-03-2020,16-06-2024,Active,35,43493.53,1205,South,2020-03-06,2024-06-16,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0018,146601,11938,02-03-2020,25-11-2024,Active,26,18353.19,4759,South,2020-03-02,2024-11-25,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0019,157512,91680,10-07-2020,13-07-2024,Active,16,20461.03,4120,South,2020-07-10,2024-07-13,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0020,197443,4000,23-03-2021,05-09-2022,Active,8,6138.59,1990,West,2021-03-23,2022-09-05,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0021,161472,167524,21-04-2021,23-05-2023,Active,32,37132.86,4805,East,2021-04-21,2023-05-23,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0022,183121,101042,31-10-2022,06-04-2023,Delinquent,19,9931.91,3572,North,2022-10-31,2023-04-06,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0023,153727,93610,17-05-2023,12-05-2022,Active,12,28634.29,4380,West,2023-05-17,2022-05-12,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0024,162893,103691,24-02-2020,24-11-2023,Active,27,42194.79,4158,East,2020-02-24,2023-11-24,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0025,70932,38304,23-02-2023,13-02-2022,Active,47,5371.01,4757,East,2023-02-23,2022-02-13,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0026,167796,69449,11-02-2021,19-04-2025,Closed,28,27231.44,2713,North,2021-02-11,2025-04-19,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0027,79855,98305,06-01-2024,08-02-2025,Delinquent,12,12427.6,2203,North,2024-01-06,2025-02-08,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0028,57400,24107,23-08-2023,17-04-2023,Active,45,17803.42,3120,North,2023-08-23,2023-04-17,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0029,167858,151836,07-12-2023,20-04-2025,Active,34,24224.53,966,South,2023-12-07,2025-04-20,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0030,65151,38494,21-01-2023,28-03-2023,Active,5,18400.11,4944,North,2023-01-21,2023-03-28,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0031,116690,3373,09-05-2022,15-01-2022,Active,17,32792.32,3432,East,2022-05-09,2022-01-15,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0032,54499,12161,27-03-2021,26-05-2022,Active,4,24499.52,688,North,2021-03-27,2022-05-26,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0033,56295,89291,08-07-2022,01-05-2022,Active,46,29625.77,4243,East,2022-07-08,2022-05-01,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0034,170885,199007,21-04-2023,14-04-2023,Active,24,37104.3,3701,West,2023-04-21,2023-04-14,True,True,True,False,True,4,8,"KYC Violation, Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0035,176071,123633,23-07-2021,19-05-2022,Active,1,28329.37,341,South,2021-07-23,2022-05-19,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0036,109040,100386,14-01-2020,06-03-2022,Active,9,29740.24,1724,West,2020-01-14,2022-03-06,True,True,False,False,False,2,5,"KYC Violation, Payment Overdue"
+CUST0037,62183,27350,03-04-2024,08-11-2023,Active,29,28658.47,4422,West,2024-04-03,2023-11-08,True,True,False,False,True,3,6,"KYC Violation, Payment Overdue, Late Fee Alert"
+CUST0038,193946,93008,08-07-2024,26-05-2022,Active,49,19559.86,1792,East,2024-07-08,2022-05-26,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0039,166336,94297,22-11-2020,18-11-2024,Active,44,17534.89,1759,West,2020-11-22,2024-11-18,True,True,True,False,False,3,7,"KYC Violation, Payment Overdue, Overlimit Violation"
+CUST0040,82711,25351,30-11-2023,03-05-2023,Watchlist,4,45082.72,3212,East,2023-11-30,2023-05-03,True,True,False,True,True,4,10,"KYC Violation, Payment Overdue, High-Risk Status, Late Fee Alert"
+CUST0041,55539,23132,12-02-2025,25-07-2023,Active,32,30770.21,989,North,2025-02-12,2023-07-25,False,True,False,False,False,1,3,Payment Overdue
+CUST0042,176063,114585,01-01-2025,21-09-2024,Active,0,12973.3,2262,North,2025-01-01,2024-09-21,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0043,183629,146377,30-11-2024,15-03-2023,Active,17,25414.14,2482,East,2024-11-30,2023-03-15,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0044,88360,75353,28-09-2024,09-01-2025,Active,31,17187.08,951,North,2024-09-28,2025-01-09,False,True,False,False,False,1,3,Payment Overdue
+CUST0045,183272,65953,29-10-2024,28-09-2022,Active,46,46750.9,722,South,2024-10-29,2022-09-28,False,True,True,False,False,2,5,"Payment Overdue, Overlimit Violation"
+CUST0046,71357,113933,30-12-2024,15-03-2025,Active,48,1369.18,3389,West,2024-12-30,2025-03-15,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0047,169121,20358,01-09-2024,26-03-2025,Active,10,12041.31,2079,South,2024-09-01,2025-03-26,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0048,127505,3267,27-08-2024,26-08-2024,Closed,20,18902.48,2717,West,2024-08-27,2024-08-26,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0049,52869,17209,21-01-2025,13-05-2023,Active,25,24902.68,2332,North,2025-01-21,2023-05-13,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0050,100108,89588,29-08-2024,26-08-2024,Closed,24,42690.06,3376,South,2024-08-29,2024-08-26,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0051,162296,201809,10-01-2025,02-07-2025,Active,21,5306.49,4524,North,2025-01-10,2025-07-02,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0052,144179,11338,03-01-2025,07-06-2025,Closed,26,40487.38,1500,West,2025-01-03,2025-06-07,False,False,False,False,False,0,0,""
+CUST0053,140272,131484,16-05-2025,24-05-2025,Watchlist,48,3727.02,285,East,2025-05-16,2025-05-24,False,False,False,True,False,1,4,High-Risk Status
+CUST0054,88467,97010,23-11-2024,18-05-2025,Delinquent,12,42273.39,3495,East,2024-11-23,2025-05-18,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0055,73328,33496,02-08-2024,18-05-2025,Closed,32,3530.14,2065,South,2024-08-02,2025-05-18,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0056,141412,60692,03-03-2025,23-06-2025,Active,33,1893.88,768,North,2025-03-03,2025-06-23,False,False,True,False,False,1,2,Overlimit Violation
+CUST0057,185059,209607,11-04-2025,08-06-2025,Delinquent,40,35151.11,3057,North,2025-04-11,2025-06-08,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0058,108871,92920,12-09-2024,03-06-2025,Active,34,49865.52,4289,South,2024-09-12,2025-06-03,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0059,178391,44425,20-01-2025,08-06-2025,Closed,0,44933.9,2161,East,2025-01-20,2025-06-08,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0060,136416,176172,20-08-2024,07-06-2025,Active,20,29223.92,3293,West,2024-08-20,2025-06-07,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0061,120271,140159,19-04-2025,10-06-2025,Active,47,45952.39,946,South,2025-04-19,2025-06-10,False,False,True,False,False,1,2,Overlimit Violation
+CUST0062,94064,35735,08-12-2024,06-07-2025,Active,5,1259.7,4926,West,2024-12-08,2025-07-06,False,False,False,False,True,1,1,Late Fee Alert
+CUST0063,157450,205745,28-05-2025,27-06-2025,Active,27,48778.29,3335,East,2025-05-28,2025-06-27,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0064,69830,119646,23-05-2025,15-05-2025,Active,16,25046.69,4150,North,2025-05-23,2025-05-15,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0065,198501,83042,12-01-2025,24-06-2025,Active,4,36421.91,4895,East,2025-01-12,2025-06-24,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0066,187965,85999,02-05-2025,22-06-2025,Active,30,41222.21,4873,South,2025-05-02,2025-06-22,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0067,166381,17955,17-10-2024,22-06-2025,Closed,4,36204.41,1481,North,2024-10-17,2025-06-22,False,False,True,False,False,1,2,Overlimit Violation
+CUST0068,97333,136174,06-07-2025,18-05-2025,Closed,37,27216.8,1901,South,2025-07-06,2025-05-18,False,True,False,False,False,1,3,Payment Overdue
+CUST0069,184508,70640,15-08-2024,15-05-2025,Closed,2,24354.35,3451,South,2024-08-15,2025-05-15,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0070,126213,65510,03-08-2024,06-06-2025,Active,22,42090.55,4064,East,2024-08-03,2025-06-06,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0071,186967,165983,14-06-2025,27-06-2025,Delinquent,36,11048.8,54,South,2025-06-14,2025-06-27,False,False,False,False,False,0,0,""
+CUST0072,80746,59031,04-11-2024,02-06-2025,Active,36,48431.71,1823,East,2024-11-04,2025-06-02,False,False,False,False,False,0,0,""
+CUST0073,99377,123567,06-12-2024,02-07-2025,Closed,9,35836.67,3462,North,2024-12-06,2025-07-02,False,False,False,False,True,1,1,Late Fee Alert
+CUST0074,104045,7357,20-08-2024,06-07-2025,Closed,9,10775.84,3079,East,2024-08-20,2025-07-06,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0075,147888,61476,07-11-2024,18-05-2025,Active,18,37076.11,832,North,2024-11-07,2025-05-18,False,True,True,False,False,2,5,"Payment Overdue, Overlimit Violation"
+CUST0076,157455,44811,31-08-2024,27-05-2025,Active,16,26962.16,4408,East,2024-08-31,2025-05-27,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0077,186672,167280,21-01-2025,24-05-2025,Active,20,35654.27,2806,West,2025-01-21,2025-05-24,False,False,False,False,True,1,1,Late Fee Alert
+CUST0078,143179,164329,30-11-2024,24-05-2025,Active,13,38621.2,2490,West,2024-11-30,2025-05-24,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0079,95714,71180,28-02-2025,15-06-2025,Delinquent,8,5277.22,327,South,2025-02-28,2025-06-15,False,False,False,False,False,0,0,""
+CUST0080,152946,112856,01-06-2025,09-06-2025,Active,45,25799.09,3310,East,2025-06-01,2025-06-09,False,False,False,False,True,1,1,Late Fee Alert
+CUST0081,159616,68450,13-01-2025,20-05-2025,Active,0,46668.7,3300,East,2025-01-13,2025-05-20,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0082,155983,152424,02-10-2024,08-06-2025,Active,44,16711.47,3675,North,2024-10-02,2025-06-08,False,False,False,False,True,1,1,Late Fee Alert
+CUST0083,174123,111888,16-01-2025,23-05-2025,Watchlist,12,30100.27,3054,South,2025-01-16,2025-05-23,False,False,False,True,True,2,5,"High-Risk Status, Late Fee Alert"
+CUST0084,199661,110448,08-01-2025,29-05-2025,Active,3,19092.29,2143,East,2025-01-08,2025-05-29,False,False,False,False,True,1,1,Late Fee Alert
+CUST0085,93484,14397,26-10-2024,10-06-2025,Active,0,23259.13,1311,South,2024-10-26,2025-06-10,False,False,False,False,False,0,0,""
+CUST0086,132989,131800,19-06-2025,27-05-2025,Active,48,27881.55,3191,West,2025-06-19,2025-05-27,False,False,False,False,True,1,1,Late Fee Alert
+CUST0087,86212,87910,24-11-2024,06-07-2025,Closed,39,27897.18,2538,East,2024-11-24,2025-07-06,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0088,93525,39954,05-07-2025,10-07-2025,Active,31,10884.79,3983,East,2025-07-05,2025-07-10,False,False,False,False,True,1,1,Late Fee Alert
+CUST0089,113208,47280,25-06-2025,16-05-2025,Closed,33,34544.01,4547,South,2025-06-25,2025-05-16,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0090,83828,79459,07-06-2025,09-06-2025,Active,27,5305.54,164,East,2025-06-07,2025-06-09,False,False,False,False,False,0,0,""
+CUST0091,199783,147851,16-08-2024,02-07-2025,Closed,30,7802.41,4277,South,2024-08-16,2025-07-02,False,False,False,False,True,1,1,Late Fee Alert
+CUST0092,53420,7400,18-05-2025,06-07-2025,Closed,7,1132.83,822,East,2025-05-18,2025-07-06,False,False,True,False,False,1,2,Overlimit Violation
+CUST0093,146752,59163,01-06-2025,05-07-2025,Delinquent,38,6718.11,943,North,2025-06-01,2025-07-05,False,False,True,False,False,1,2,Overlimit Violation
+CUST0094,181373,51934,06-10-2024,16-06-2025,Active,25,24185.14,4425,South,2024-10-06,2025-06-16,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0095,165294,163379,10-04-2025,18-05-2025,Active,33,30698.99,774,East,2025-04-10,2025-05-18,False,True,False,False,False,1,3,Payment Overdue
+CUST0096,174019,54098,13-11-2024,15-05-2025,Active,2,39920.18,2198,West,2024-11-13,2025-05-15,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0097,115726,60921,02-10-2024,22-06-2025,Active,49,6228.26,3156,East,2024-10-02,2025-06-22,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0098,191564,5486,04-03-2025,15-06-2025,Closed,11,42685.65,4242,West,2025-03-04,2025-06-15,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0099,165668,139407,21-01-2025,04-07-2025,Closed,0,37552.75,3695,West,2025-01-21,2025-07-04,False,False,False,False,True,1,1,Late Fee Alert
+CUST0100,56102,78466,26-11-2024,12-05-2025,Active,43,21017.4,3452,North,2024-11-26,2025-05-12,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0101,168015,126020,03-06-2025,17-05-2025,Active,4,46713.97,914,South,2025-06-03,2025-05-17,False,True,False,False,False,1,3,Payment Overdue
+CUST0102,76641,11130,28-06-2025,10-07-2025,Active,29,49555.54,1308,East,2025-06-28,2025-07-10,False,False,False,False,False,0,0,""
+CUST0103,153746,176718,22-04-2025,29-06-2025,Active,29,11045.09,4177,North,2025-04-22,2025-06-29,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0104,86631,128050,31-10-2024,05-07-2025,Active,16,19582.2,513,East,2024-10-31,2025-07-05,False,False,False,False,False,0,0,""
+CUST0105,122991,118324,26-06-2025,27-05-2025,Active,47,46396.02,1920,West,2025-06-26,2025-05-27,False,False,False,False,False,0,0,""
+CUST0106,54014,1167,24-12-2024,22-05-2025,Closed,46,36358.23,3594,South,2024-12-24,2025-05-22,False,False,False,False,True,1,1,Late Fee Alert
+CUST0107,61093,27192,08-08-2024,07-06-2025,Delinquent,22,3356.64,4841,East,2024-08-08,2025-06-07,False,False,False,False,True,1,1,Late Fee Alert
+CUST0108,68070,1062,05-11-2024,12-06-2025,Active,14,39294.21,1409,East,2024-11-05,2025-06-12,False,False,False,False,False,0,0,""
+CUST0109,85777,105317,27-07-2024,11-06-2025,Watchlist,36,41569.1,4802,West,2024-07-27,2025-06-11,False,False,False,True,True,2,5,"High-Risk Status, Late Fee Alert"
+CUST0110,106958,89780,19-12-2024,25-05-2025,Active,20,37774.59,4566,East,2024-12-19,2025-05-25,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0111,132074,21689,01-02-2025,06-07-2025,Active,13,40177.32,3190,East,2025-02-01,2025-07-06,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0112,60729,11174,25-11-2024,06-06-2025,Watchlist,1,41431.5,4491,West,2024-11-25,2025-06-06,False,False,False,True,True,2,5,"High-Risk Status, Late Fee Alert"
+CUST0113,155864,88461,13-08-2024,08-07-2025,Active,10,10133.84,1555,North,2024-08-13,2025-07-08,False,False,True,False,False,1,2,Overlimit Violation
+CUST0114,180858,126174,27-10-2024,15-05-2025,Active,38,12548.9,804,West,2024-10-27,2025-05-15,False,True,False,False,False,1,3,Payment Overdue
+CUST0115,155510,194007,27-04-2025,22-05-2025,Active,37,32054.17,1279,North,2025-04-27,2025-05-22,False,False,True,False,False,1,2,Overlimit Violation
+CUST0116,104748,9348,19-12-2024,05-06-2025,Active,33,45485.44,3577,South,2024-12-19,2025-06-05,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0117,55801,80515,27-10-2024,12-05-2025,Active,37,16493.63,2901,North,2024-10-27,2025-05-12,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0118,79592,118694,11-06-2025,05-06-2025,Active,49,29827.03,1387,North,2025-06-11,2025-06-05,False,False,False,False,False,0,0,""
+CUST0119,60647,8924,23-03-2025,28-05-2025,Active,33,34466.12,4688,South,2025-03-23,2025-05-28,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0120,189788,227886,29-01-2025,10-07-2025,Active,17,23145.48,2761,North,2025-01-29,2025-07-10,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0121,160627,186021,05-06-2025,01-07-2025,Active,29,35975.34,2679,West,2025-06-05,2025-07-01,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0122,120316,128117,02-03-2025,01-07-2025,Active,14,45083.7,2106,North,2025-03-02,2025-07-01,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0123,52368,37614,22-09-2024,10-06-2025,Active,26,31580.98,4223,South,2024-09-22,2025-06-10,False,False,False,False,True,1,1,Late Fee Alert
+CUST0124,127575,72267,23-11-2024,30-05-2025,Active,33,27449.27,4831,West,2024-11-23,2025-05-30,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0125,56655,105791,20-09-2024,08-06-2025,Active,37,22498.49,2768,South,2024-09-20,2025-06-08,False,False,False,False,True,1,1,Late Fee Alert
+CUST0126,120031,23625,14-11-2024,25-06-2025,Active,32,29296.83,3953,South,2024-11-14,2025-06-25,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0127,137922,156259,24-04-2025,27-06-2025,Active,23,18412.76,3186,East,2025-04-24,2025-06-27,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0128,174046,1542,12-04-2025,01-07-2025,Active,14,20182.62,3280,East,2025-04-12,2025-07-01,False,False,False,False,True,1,1,Late Fee Alert
+CUST0129,194475,21677,22-11-2024,16-06-2025,Active,29,27061.02,2573,South,2024-11-22,2025-06-16,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0130,82097,129829,06-05-2025,23-06-2025,Active,41,4264.34,4616,South,2025-05-06,2025-06-23,False,False,False,False,True,1,1,Late Fee Alert
+CUST0131,192038,181415,15-02-2025,26-06-2025,Active,16,12222.24,2599,South,2025-02-15,2025-06-26,False,False,False,False,True,1,1,Late Fee Alert
+CUST0132,174862,39081,05-05-2025,12-06-2025,Closed,4,27599.62,4033,East,2025-05-05,2025-06-12,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0133,168834,93105,31-01-2025,21-05-2025,Delinquent,28,22144.88,236,East,2025-01-31,2025-05-21,False,False,True,False,False,1,2,Overlimit Violation
+CUST0134,143848,19065,12-01-2025,24-05-2025,Closed,3,17307.97,1304,North,2025-01-12,2025-05-24,False,False,True,False,False,1,2,Overlimit Violation
+CUST0135,102921,83460,31-10-2024,30-05-2025,Active,9,36796.91,3430,North,2024-10-31,2025-05-30,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0136,176141,199697,19-09-2024,25-05-2025,Closed,16,34992.16,1301,South,2024-09-19,2025-05-25,False,False,True,False,False,1,2,Overlimit Violation
+CUST0137,72677,54693,28-03-2025,15-05-2025,Active,9,9169.81,2541,West,2025-03-28,2025-05-15,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0138,105609,26962,20-03-2025,18-06-2025,Delinquent,16,44052.83,2051,West,2025-03-20,2025-06-18,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0139,81024,28295,26-08-2024,28-06-2025,Active,19,25275.76,441,East,2024-08-26,2025-06-28,False,False,False,False,False,0,0,""
+CUST0140,120313,13807,04-08-2024,15-06-2025,Watchlist,23,37331.58,2076,East,2024-08-04,2025-06-15,False,False,True,True,True,3,7,"Overlimit Violation, High-Risk Status, Late Fee Alert"
+CUST0141,177813,173420,05-09-2024,15-05-2025,Active,4,29084.39,3180,East,2024-09-05,2025-05-15,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0142,145285,132396,27-09-2024,28-06-2025,Active,33,49886.94,2657,South,2024-09-27,2025-06-28,False,False,False,False,True,1,1,Late Fee Alert
+CUST0143,196410,91267,28-05-2025,01-06-2025,Active,5,37867.75,3798,West,2025-05-28,2025-06-01,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0144,163632,200541,30-09-2024,15-05-2025,Active,1,35642.04,804,North,2024-09-30,2025-05-15,False,True,True,False,False,2,5,"Payment Overdue, Overlimit Violation"
+CUST0145,53051,23803,24-06-2025,15-05-2025,Closed,12,39150.03,74,South,2025-06-24,2025-05-15,False,True,False,False,False,1,3,Payment Overdue
+CUST0146,164692,19870,12-02-2025,18-06-2025,Active,42,8013.27,2175,North,2025-02-12,2025-06-18,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0147,137235,172813,12-05-2025,11-06-2025,Active,42,11022.69,3924,North,2025-05-12,2025-06-11,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0148,123523,72124,12-08-2024,13-06-2025,Closed,47,35989.14,2089,South,2024-08-12,2025-06-13,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0149,144476,26790,24-01-2025,09-07-2025,Active,10,25205.09,40,North,2025-01-24,2025-07-09,False,False,True,False,False,1,2,Overlimit Violation
+CUST0150,67019,25289,22-01-2025,05-07-2025,Delinquent,46,37977.13,2081,West,2025-01-22,2025-07-05,False,False,False,False,True,1,1,Late Fee Alert
+CUST0151,133613,15485,12-05-2025,14-06-2025,Delinquent,22,6042.89,4683,North,2025-05-12,2025-06-14,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0152,136672,44482,07-03-2025,22-05-2025,Active,15,27287.59,1622,West,2025-03-07,2025-05-22,False,False,True,False,False,1,2,Overlimit Violation
+CUST0153,123847,86188,07-04-2025,15-05-2025,Active,30,19562.26,341,West,2025-04-07,2025-05-15,False,True,True,False,False,2,5,"Payment Overdue, Overlimit Violation"
+CUST0154,132750,138498,16-11-2024,13-06-2025,Watchlist,10,23393.01,4052,West,2024-11-16,2025-06-13,False,False,True,True,True,3,7,"Overlimit Violation, High-Risk Status, Late Fee Alert"
+CUST0155,78251,9435,20-04-2025,17-05-2025,Delinquent,15,30593.94,2074,East,2025-04-20,2025-05-17,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0156,153481,3709,16-07-2024,05-07-2025,Active,7,25612.13,645,North,2024-07-16,2025-07-05,True,False,True,False,False,2,4,"KYC Violation, Overlimit Violation"
+CUST0157,162566,193921,24-06-2025,23-05-2025,Active,3,27453.17,4826,South,2025-06-24,2025-05-23,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0158,75945,55771,07-09-2024,16-05-2025,Active,39,24831.52,4263,South,2024-09-07,2025-05-16,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0159,140852,154968,25-06-2025,19-06-2025,Active,3,21038.8,609,North,2025-06-25,2025-06-19,False,False,True,False,False,1,2,Overlimit Violation
+CUST0160,82217,25470,11-04-2025,16-05-2025,Active,24,38822.22,454,East,2025-04-11,2025-05-16,False,True,False,False,False,1,3,Payment Overdue
+CUST0161,58308,42344,24-11-2024,24-06-2025,Closed,2,1597.95,2953,East,2024-11-24,2025-06-24,False,False,False,False,True,1,1,Late Fee Alert
+CUST0162,55949,42918,04-06-2025,06-07-2025,Active,31,30323.69,1708,West,2025-06-04,2025-07-06,False,False,False,False,False,0,0,""
+CUST0163,182222,52224,01-01-2025,27-05-2025,Active,2,28709.91,3472,North,2025-01-01,2025-05-27,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0164,150235,39298,06-09-2024,06-06-2025,Active,26,36092.77,2969,North,2024-09-06,2025-06-06,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0165,124740,108492,08-12-2024,19-05-2025,Active,28,30352.44,3028,South,2024-12-08,2025-05-19,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0166,166352,182035,18-02-2025,11-07-2025,Active,31,41513.14,4797,North,2025-02-18,2025-07-11,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0167,116617,118121,29-09-2024,07-07-2025,Active,49,47994.66,2681,East,2024-09-29,2025-07-07,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0168,66896,28016,28-02-2025,17-06-2025,Active,18,17783.69,3629,North,2025-02-28,2025-06-17,False,False,False,False,True,1,1,Late Fee Alert
+CUST0169,180798,23960,12-07-2024,27-05-2025,Active,20,12140.2,4225,South,2024-07-12,2025-05-27,True,False,True,False,True,3,5,"KYC Violation, Overlimit Violation, Late Fee Alert"
+CUST0170,188877,33591,22-11-2024,18-06-2025,Active,4,21756.25,3067,West,2024-11-22,2025-06-18,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0171,55237,17312,24-03-2025,19-06-2025,Active,17,15108.55,1386,South,2025-03-24,2025-06-19,False,False,False,False,False,0,0,""
+CUST0172,70056,67641,10-10-2024,14-05-2025,Closed,27,31132.56,3776,South,2024-10-10,2025-05-14,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0173,164548,36395,27-03-2025,20-06-2025,Active,41,45680.77,2866,West,2025-03-27,2025-06-20,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0174,161488,129695,03-09-2024,17-05-2025,Active,21,7816.69,4788,South,2024-09-03,2025-05-17,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
+CUST0175,184415,153772,27-05-2025,07-06-2025,Closed,20,5938.94,3363,South,2025-05-27,2025-06-07,False,False,False,False,True,1,1,Late Fee Alert
+CUST0176,194572,34620,10-12-2024,23-06-2025,Active,5,13544.76,4889,North,2024-12-10,2025-06-23,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0177,79375,118053,03-06-2025,18-06-2025,Delinquent,0,36578.68,4124,North,2025-06-03,2025-06-18,False,False,False,False,True,1,1,Late Fee Alert
+CUST0178,190734,128148,27-03-2025,17-06-2025,Active,4,30055.18,148,West,2025-03-27,2025-06-17,False,False,False,False,False,0,0,""
+CUST0179,66964,88523,18-05-2025,14-06-2025,Active,40,6008.42,3850,North,2025-05-18,2025-06-14,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0180,163429,93396,20-10-2024,01-06-2025,Active,11,46018.78,2058,North,2024-10-20,2025-06-01,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0181,117215,61642,27-09-2024,10-07-2025,Closed,25,39714.15,1136,South,2024-09-27,2025-07-10,False,False,True,False,False,1,2,Overlimit Violation
+CUST0182,119042,76539,18-01-2025,28-05-2025,Active,45,2128.11,186,East,2025-01-18,2025-05-28,False,False,True,False,False,1,2,Overlimit Violation
+CUST0183,194356,21732,01-10-2024,25-05-2025,Active,33,32916.99,2854,North,2024-10-01,2025-05-25,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0184,143468,91362,13-04-2025,23-06-2025,Active,48,38791.09,1250,East,2025-04-13,2025-06-23,False,False,True,False,False,1,2,Overlimit Violation
+CUST0185,59435,30354,08-04-2025,26-06-2025,Active,13,19347.33,1333,North,2025-04-08,2025-06-26,False,False,False,False,False,0,0,""
+CUST0186,128832,13843,11-07-2024,01-06-2025,Active,25,4377.16,4193,North,2024-07-11,2025-06-01,True,False,True,False,True,3,5,"KYC Violation, Overlimit Violation, Late Fee Alert"
+CUST0187,101293,71726,13-05-2025,27-05-2025,Closed,44,4788.73,4150,West,2025-05-13,2025-05-27,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0188,128781,17640,23-12-2024,28-05-2025,Active,26,6108.1,2711,West,2024-12-23,2025-05-28,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0189,93919,133332,18-03-2025,06-06-2025,Watchlist,8,42181.54,4853,West,2025-03-18,2025-06-06,False,False,False,True,True,2,5,"High-Risk Status, Late Fee Alert"
+CUST0190,171172,214528,20-07-2024,20-05-2025,Active,25,45623.62,4501,East,2024-07-20,2025-05-20,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0191,144758,110133,06-09-2024,23-06-2025,Active,46,7017.73,1785,South,2024-09-06,2025-06-23,False,False,False,False,False,0,0,""
+CUST0192,106573,106357,12-01-2025,22-06-2025,Active,21,12559.4,750,North,2025-01-12,2025-06-22,False,False,False,False,False,0,0,""
+CUST0193,109101,68866,15-12-2024,31-05-2025,Closed,46,9110.51,1762,North,2024-12-15,2025-05-31,False,False,True,False,False,1,2,Overlimit Violation
+CUST0194,76646,19087,10-11-2024,10-06-2025,Active,29,10129.72,3920,North,2024-11-10,2025-06-10,False,False,False,False,True,1,1,Late Fee Alert
+CUST0195,154185,196615,09-08-2024,01-06-2025,Closed,42,42037.05,4460,East,2024-08-09,2025-06-01,False,False,True,False,True,2,3,"Overlimit Violation, Late Fee Alert"
+CUST0196,73049,98553,11-11-2024,10-07-2025,Watchlist,47,17275.17,481,West,2024-11-11,2025-07-10,False,False,True,True,False,2,6,"Overlimit Violation, High-Risk Status"
+CUST0197,148116,138186,27-04-2025,29-06-2025,Active,16,16260.77,153,South,2025-04-27,2025-06-29,False,False,False,False,False,0,0,""
+CUST0198,147379,78859,20-08-2024,10-07-2025,Active,25,12142.39,1524,East,2024-08-20,2025-07-10,False,False,True,False,False,1,2,Overlimit Violation
+CUST0199,118385,153506,23-08-2024,16-05-2025,Closed,35,30786.83,2120,West,2024-08-23,2025-05-16,False,True,True,False,True,3,6,"Payment Overdue, Overlimit Violation, Late Fee Alert"
+CUST0200,176131,142047,16-03-2025,12-05-2025,Active,0,19585.98,2343,East,2025-03-16,2025-05-12,False,True,False,False,True,2,4,"Payment Overdue, Late Fee Alert"
