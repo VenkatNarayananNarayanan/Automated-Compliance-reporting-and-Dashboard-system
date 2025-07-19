@@ -82,15 +82,24 @@ The dataset structure mirrors what you’d expect in a real financial institutio
 ---
 
 # Screenshots 
-
-  File Name in screenshots                                              Image Description
-1. Alteryx Workflow.png	                                              Alteryx ETL pipeline
-2. Compliance dashboard.png	                                      Tableau: Compliance Dashboard
-3. risk explor table.png	                                         Tableau: Risk Explorer Table
-4. Time trend.png	                                                Tableau: KYC/Violation Trends
-5. Before Automate Weekly compliance task.png	                  Before automation Compliance proof
-6. After Automated weekly compliance task .png	                 After automation Compliance result
-7. After Audit report generated.png	                                Audit log file CSV updated
-8. Audit Panel.png	Tableau:                                            Audit Trail panel
-9. Automated email to manager.png	S                               creenshot of email with reports
-
+_______________________________________________________________________________________________________
+|  File Name in screenshots                              |                Image Description           |
+_______________________________________________________________________________________________________
+|1. Alteryx Workflow.png	                               |               Alteryx ETL pipeline         | 
+-------------------------------------------------------------------------------------------------------
+|2. Compliance dashboard.png	                           |           Tableau: Compliance Dashboard    |
+-------------------------------------------------------------------------------------------------------
+|3. risk explor table.png	                               |            Tableau: Risk Explorer Table    |
+-------------------------------------------------------------------------------------------------------
+|4. Time trend.png	                                     |           Tableau: KYC/Violation Trends    |
+-------------------------------------------------------------------------------------------------------
+|5. Before Automate Weekly compliance task.png	         |         Before automation Compliance proof |
+-------------------------------------------------------------------------------------------------------
+|6. After Automated weekly compliance task .png	         |        After automation Compliance result  |
+-------------------------------------------------------------------------------------------------------
+|7. After Audit report generated.png	                   |             Audit log file CSV updated     |
+-------------------------------------------------------------------------------------------------------
+|8. Audit Panel.png	Tableau:                             |                 Audit Trail panel          |    
+-------------------------------------------------------------------------------------------------------
+|9. Automated email to manager.png	S                    |           creenshot of email with reports  |
+-------------------------------------------------------------------------------------------------------
